@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <title>PixelArt CSS</title>
+        <link rel="stylesheet" href="style.css">
+        <script src="https://code.jquery.com/jquery-3.6.3.min.js" integrity="sha256-pvPw+upLPUjgMXY0G+8O0xUf+/Im1MZjXxxgOcBQBXU=" crossorigin="anonymous"></script>
+    </head>
+    <body>
+        <div id="div_canva">
+            <div id="div_yoshi" class="div_yoshi_green"></div>
+        </div>
+        <div id="div_canva_buttons">
+            <button id="btn_paintgreen" class="btn_change_color">Verde</button>
+            <button id="btn_paintblue" class="btn_change_color">Azul</button>
+            <button id="btn_paintpink" class="btn_change_color">Rosao</button>
+            <button id="btn_paintred" class="btn_change_color">Rojo</button>
+            <button id="btn_paintwhite" class="btn_change_color">Blanco</button>    
+        </div>
+    </body>
+    <script>
+        $("#btn_paintgreen").click(function() {
+            $("#div_yoshi")[0].className = ""            
+            $("#div_yoshi").addClass("div_yoshi_green")
+        })
+        $("#btn_paintblue").click(function() {
+            $("#div_yoshi")[0].className = ""            
+            $("#div_yoshi").addClass("div_yoshi_blue")
+        })
+        $("#btn_paintpink").click(function() {
+            $("#div_yoshi")[0].className = ""            
+            $("#div_yoshi").addClass("div_yoshi_pink")
+        })
+
+        $("#btn_paintred").click(function() {
+            $("#div_yoshi")[0].className = ""            
+            $("#div_yoshi").addClass("div_yoshi_red")
+        })
+
+        $("#btn_paintwhite").click(function() {
+            $("#div_yoshi")[0].className = ""            
+            $("#div_yoshi").addClass("div_yoshi_white")
+        })
+        
+    </script>
+</html>

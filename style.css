@@ -1,0 +1,508 @@
+#div_canva {
+    width: 27em;
+    height: 32em;
+    display: block;
+    justify-content: center;
+    border: solid 1px black;
+}
+
+#div_canva_buttons {
+    display: block;
+    justify-content: center;
+}
+
+.btn_change_color {
+    background-color: gainsboro;
+    border-style: inset;
+    border-color: #aaa;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 15px;
+    color: #233;
+    width: 5em;
+    padding: 5px 5px 5px 5px;
+    transition: 0.5s;
+}
+
+.btn_change_color:hover {
+    background-color: darkslategray;
+    color: gainsboro;
+    transition: 0.5s;
+}
+
+.btn_change_color:focus {
+    background-color: slategray;
+    color: gainsboro;
+    transition: 0.5s;
+}
+
+
+#div_yoshi {
+    /* Default Color Variables */
+    --outline: rgb(44,43,44);
+
+    --body-dark: rgb(12,111,0);
+    --body-mid:  rgb(38,179,0);
+    --body-light: rgb(16,255,28);
+
+    --eyes-corneas: rgb(255,255,255);
+    --eyes-pupils: rgb(0,0,0);
+
+    --back-mane-dark: rgb(156,29,0); 
+    --back-mane-mid: rgb(254,50,23);
+    --back-mane-light: rgb(254,50,23);
+
+    --shoe-dark: rgb(163,48,0);
+    --shoe-mid: rgb(246,83,0);
+    --shoe-light: rgb(249,146,0);
+
+    /* Pixels dimensions */
+    width: 1em;
+    height: 1em;
+    position: absolute;
+    
+    /* Pattern with Box-Shadow */
+    box-shadow: 
+    
+    14em 1em var(--outline),
+    15em 1em var(--outline),
+    17em 1em var(--outline),
+    18em 1em var(--outline),
+
+    13em 2em var(--outline),
+    14em 2em var(--body-mid),
+    15em 2em var(--body-light),
+    16em 2em var(--outline),
+    17em 2em var(--body-mid),
+    18em 2em var(--body-light),
+    19em 2em var(--outline),
+
+    12em 3em var(--outline),
+    13em 3em var(--body-dark),
+    14em 3em var(--body-mid),
+    19em 3em var(--body-light),
+    20em 3em var(--outline),
+
+    9em 4em var(--outline),
+    10em 4em var(--outline),
+    11em 4em var(--outline),
+    12em 4em var(--outline),
+    13em 4em var(--body-dark),
+    16em 4em var(--outline),
+    18em 4em var(--outline),
+    20em 4em var(--outline),
+
+    8em 5em var(--outline),
+    9em 5em rgb(254,50,23),
+    10em 5em rgb(255,126,20),
+    11em 5em rgb(255,126,20),
+    12em 5em var(--outline),
+    16em 5em var(--outline),
+    18em 5em var(--outline),
+    20em 5em var(--outline),
+
+    8em 6em var(--outline),
+    9em 6em rgb(156,29,0),
+    10em 6em rgb(254,50,23),
+    11em 6em var(--outline),
+    12em 6em var(--outline),
+    20em 6em var(--outline),
+    21em 6em var(--outline),
+    22em 6em var(--outline),
+
+    8em 7em var(--outline),
+    9em 7em var(--outline),
+    10em 7em var(--outline),
+    11em 7em var(--body-light),
+    12em 7em var(--body-light),
+    13em 7em var(--body-dark),
+    17em 7em var(--body-dark),
+    19em 7em var(--outline),
+    20em 7em var(--body-light),
+    21em 7em var(--body-light),
+    22em 7em var(--body-light),
+    23em 7em var(--outline),
+
+    7em 8em var(--outline),
+    8em 8em rgb(255,126,20),
+    9em 8em var(--outline),
+    10em 8em var(--body-mid),
+    11em 8em var(--body-light),
+    13em 8em var(--body-light),
+    14em 8em var(--body-dark),
+    15em 8em var(--body-dark),
+    16em 8em var(--body-dark),
+    17em 8em var(--body-light),
+    18em 8em var(--body-dark),
+    19em 8em var(--body-light),
+    20em 8em var(--body-light),
+    23em 8em var(--body-light),
+    24em 8em var(--outline),
+
+    6em 9em var(--outline),
+    7em 9em rgb(156,29,0),
+    8em 9em rgb(254,50,23),
+    9em 9em var(--outline),
+    10em 9em var(--body-mid),
+    11em 9em var(--body-light),
+    12em 9em var(--body-light),
+    16em 9em var(--body-light),
+    17em 9em var(--body-mid),
+    18em 9em var(--body-light),
+    19em 9em var(--body-light),
+    20em 9em var(--body-light),
+    21em 9em var(--outline),
+    23em 9em var(--outline),
+    24em 9em var(--body-light),
+    25em 9em var(--outline),
+    
+    6em 10em var(--outline),
+    7em 10em rgb(156,29,0),
+    8em 10em rgb(156,29,0),
+    9em 10em var(--outline),
+    10em 10em var(--body-dark),
+    11em 10em var(--body-mid),
+    16em 10em var(--body-mid),
+    17em 10em var(--body-mid),
+    18em 10em var(--body-light),
+    19em 10em var(--body-light),
+    20em 10em var(--body-light),
+    21em 10em var(--body-light),
+    22em 10em var(--body-light),
+    23em 10em var(--body-light),
+    24em 10em var(--body-light),
+    25em 10em var(--outline),
+
+    7em 11em var(--outline),
+    8em 11em var(--outline),
+    9em 11em var(--outline),
+    10em 11em var(--body-dark),
+    11em 11em var(--body-mid),
+    16em 11em var(--outline),
+    17em 11em var(--body-mid),
+    18em 11em var(--body-mid),
+    19em 11em var(--body-light),
+    20em 11em var(--body-light),
+    21em 11em var(--body-light),
+    22em 11em var(--body-light),
+    23em 11em var(--body-light),
+    24em 11em var(--body-light),
+    25em 11em var(--outline),
+
+    8em 12em var(--outline),
+    9em 12em var(--outline),
+    10em 12em var(--body-dark),
+    11em 12em var(--body-dark),
+    12em 12em rgb(254,209,173),
+    15em 12em rgb(254,209,173),
+    16em 12em var(--outline),
+    17em 12em var(--body-dark),
+    18em 12em var(--body-mid),
+    19em 12em var(--body-mid),
+    20em 12em var(--body-mid),
+    21em 12em var(--body-light),
+    22em 12em var(--body-light),
+    23em 12em var(--body-light),
+    24em 12em var(--body-mid),
+    25em 12em var(--outline),
+
+    8em 13em var(--outline),
+    9em 13em rgb(254,50,23),
+    10em 13em var(--outline),
+    11em 13em var(--body-dark),
+    12em 13em var(--body-dark),
+    13em 13em rgb(254,209,173),
+    14em 13em rgb(254,209,173),
+    15em 13em var(--outline),
+    16em 13em var(--outline),
+    17em 13em var(--body-dark),
+    18em 13em var(--body-dark),
+    19em 13em var(--body-mid),
+    20em 13em var(--body-mid),
+    21em 13em var(--body-mid),
+    22em 13em var(--body-mid),
+    23em 13em var(--body-mid),
+    24em 13em var(--body-mid),
+    25em 13em var(--outline),
+
+    9em 14em var(--outline),
+    10em 14em var(--outline),
+    11em 14em var(--outline),
+    12em 14em var(--body-dark),
+    13em 14em var(--body-dark),
+    14em 14em rgb(254,209,173),
+    15em 14em rgb(254,209,173),
+    16em 14em var(--outline),
+    17em 14em var(--body-dark),
+    18em 14em var(--body-dark),
+    19em 14em var(--body-dark),
+    20em 14em var(--body-dark),
+    21em 14em var(--body-mid),
+    22em 14em var(--body-mid),
+    23em 14em var(--body-mid),
+    24em 14em var(--outline),
+
+    9em 15em var(--outline),
+    10em 15em rgb(254,50,23),
+    11em 15em var(--outline),
+    12em 15em var(--body-dark),
+    13em 15em var(--body-mid),
+    14em 15em rgb(255,186,147),
+    15em 15em rgb(254,209,173),
+    17em 15em var(--outline),
+    18em 15em var(--body-dark),
+    19em 15em var(--body-dark),
+    20em 15em var(--body-dark),
+    21em 15em var(--body-dark),
+    22em 15em var(--outline),
+    23em 15em var(--outline),
+    
+    7em 16em var(--outline),
+    8em 16em var(--outline),
+    9em 16em var(--outline),
+    10em 16em var(--outline),
+    11em 16em var(--body-dark),
+    12em 16em var(--body-mid),
+    13em 16em var(--body-mid),
+    14em 16em rgb(255,186,147),
+    15em 16em rgb(255,186,147),
+    16em 16em var(--outline),
+    18em 16em rgb(44,43,44),
+    19em 16em rgb(44,43,44),
+    20em 16em rgb(44,43,44),
+    21em 16em rgb(44,43,44),
+
+    5em 17em var(--outline),
+    6em 17em rgb(255,126,20),
+    8em 17em var(--outline),
+    9em 17em var(--outline),
+    10em 17em var(--outline),
+    11em 17em var(--body-dark),
+    12em 17em var(--body-mid),
+    13em 17em var(--body-mid),
+    16em 17em var(--outline),
+    17em 17em var(--outline),
+    18em 17em var(--outline),
+
+    3em 18em var(--outline),
+    4em 18em var(--outline),
+    5em 18em rgb(255,126,20),
+    6em 18em rgb(255,126,20),
+    7em 18em var(--outline),
+    8em 18em var(--outline),
+    9em 18em var(--body-light),
+    10em 18em var(--body-light),
+    11em 18em var(--body-light),
+    12em 18em var(--body-light),
+    16em 18em var(--outline),
+    18em 18em var(--body-light),
+    19em 18em var(--outline),
+
+    1em 19em var(--outline),
+    2em 19em var(--outline),
+    3em 19em var(--outline),
+    5em 19em var(--outline),
+    6em 19em var(--outline),
+    7em 19em var(--body-mid),
+    8em 19em var(--body-mid),
+    9em 19em var(--body-light),
+    10em 19em var(--body-light),
+    11em 19em var(--outline),
+    16em 19em var(--outline),
+    17em 19em var(--outline),
+    19em 19em var(--body-light),
+    20em 19em var(--outline),
+
+    1em 20em var(--outline),
+    2em 20em var(--body-light),
+    3em 20em var(--body-mid),
+    4em 20em var(--outline),
+    5em 20em var(--outline),
+    6em 20em var(--body-light),
+    7em 20em var(--body-light),
+    8em 20em var(--body-light),
+    9em 20em var(--body-light),
+    10em 20em var(--outline),
+    16em 20em var(--outline),
+    17em 20em var(--outline),
+    18em 20em var(--outline),
+    19em 20em var(--body-light),
+    20em 20em var(--outline),
+
+    1em 21em var(--outline),
+    3em 21em var(--body-dark),
+    4em 21em var(--outline),
+    5em 21em var(--body-light),
+    6em 21em var(--body-light),
+    7em 21em var(--body-light),
+    10em 21em var(--body-light),
+    11em 21em var(--outline),
+    16em 21em var(--outline),
+    17em 21em var(--outline),
+    18em 21em var(--body-light),
+    19em 21em var(--body-light),
+    20em 21em var(--outline),
+
+    1em 22em var(--outline),
+    4em 22em var(--outline),
+    5em 22em var(--body-mid),
+    6em 22em var(--body-light),
+    7em 22em var(--body-light),
+    10em 22em var(--outline),
+    11em 22em var(--outline),
+    15em 22em var(--outline),
+    16em 22em var(--outline),
+    17em 22em var(--body-light),
+    18em 22em var(--body-light),
+    19em 22em var(--body-light),
+    20em 22em var(--outline),
+
+    2em 23em var(--outline),
+    3em 23em rgb(255,186,147),
+    4em 23em var(--outline),
+    5em 23em var(--body-dark),
+    6em 23em var(--body-mid),
+    7em 23em var(--body-light),
+    8em 23em var(--body-light),
+    9em 23em var(--body-light),
+    10em 23em var(--body-light),
+    11em 23em var(--outline),
+    15em 23em var(--outline),
+    16em 23em var(--outline),
+    17em 23em var(--body-light),
+    18em 23em var(--body-light),
+    19em 23em var(--body-light),
+    20em 23em var(--outline),
+
+    2em 24em var(--outline),
+    3em 24em rgb(255,186,147),
+    5em 24em var(--outline),
+    6em 24em var(--body-dark),
+    7em 24em var(--body-mid),
+    8em 24em var(--body-mid),
+    9em 24em var(--body-mid),
+    10em 24em var(--outline),
+    13em 24em rgb(254,209,173),
+    14em 24em var(--outline),
+    15em 24em var(--outline),
+    16em 24em var(--outline),
+    17em 24em var(--outline),
+    18em 24em var(--outline),
+    19em 24em var(--outline),
+
+    3em 25em var(--outline),
+    4em 25em var(--outline),
+    5em 25em var(--outline),
+    6em 25em var(--outline),
+    7em 25em var(--outline),
+    8em 25em var(--outline),
+    9em 25em var(--outline),
+    10em 25em rgb(254,209,173),
+    11em 25em rgb(254,209,173),
+    12em 25em rgb(254,209,173),
+    13em 25em rgb(255,186,147),
+    14em 25em var(--outline),
+
+    3em 26em var(--outline),
+    4em 26em var(--shoe-dark),
+    5em 26em var(--shoe-mid),
+    6em 26em var(--shoe-light),
+    7em 26em var(--shoe-light),
+    8em 26em var(--outline),
+    9em 26em rgb(254,209,173),
+    10em 26em rgb(254,209,173),
+    11em 26em var(--outline),
+    12em 26em var(--outline),
+    13em 26em var(--outline),
+
+    3em 27em var(--outline),
+    4em 27em var(--shoe-dark),
+    5em 27em var(--shoe-mid),
+    6em 27em var(--shoe-light),
+    7em 27em var(--shoe-light),
+    8em 27em var(--outline),
+    9em 27em var(--outline),
+    10em 27em var(--outline),
+    11em 27em var(--shoe-light),
+    12em 27em var(--outline),
+    13em 27em var(--outline),
+    14em 27em var(--outline),
+
+    2em 28em var(--outline),
+    3em 28em var(--shoe-dark),
+    4em 28em var(--shoe-dark),
+    5em 28em var(--shoe-dark),
+    6em 28em var(--shoe-mid),
+    8em 28em var(--shoe-light),
+    9em 28em var(--outline),
+    10em 28em var(--shoe-dark),
+    11em 28em var(--shoe-mid),
+    12em 28em var(--shoe-light),
+    13em 28em var(--shoe-light),
+    15em 28em var(--outline),
+
+    2em 29em var(--outline),
+    3em 29em var(--shoe-dark),
+    4em 29em var(--shoe-dark),
+    5em 29em var(--shoe-mid),
+    6em 29em var(--shoe-light),
+    7em 29em var(--shoe-light),
+    8em 29em var(--shoe-light),
+    9em 29em var(--outline),
+    10em 29em var(--shoe-dark),
+    11em 29em var(--shoe-dark),
+    12em 29em var(--shoe-mid),
+    13em 29em var(--shoe-mid),
+    14em 29em var(--shoe-light),
+    15em 29em var(--outline),
+
+    2em 30em var(--outline),
+    3em 30em var(--outline),
+    4em 30em var(--outline),
+    5em 30em var(--outline),
+    6em 30em var(--outline),
+    7em 30em var(--outline),
+    8em 30em var(--outline),
+    9em 30em var(--outline),
+    10em 30em var(--outline),
+    11em 30em var(--outline),
+    12em 30em var(--outline),
+    13em 30em var(--outline),
+    14em 30em var(--outline),
+    15em 30em var(--outline);
+    
+}
+
+.div_yoshi_green {
+    --body-dark: rgb(12,111,0) !important;
+    --body-mid:  rgb(38,179,0) !important;
+    --body-light: rgb(16,255,28) !important;
+    transition: 1s;
+}
+
+.div_yoshi_pink {
+    --body-dark: rgb(197,24,150) !important;
+    --body-mid:  rgb(239,109,171) !important;
+    --body-light: rgb(241,182,210) !important;   
+    transition: 1s;
+}
+
+.div_yoshi_blue {
+    --body-dark: rgb(1,87,155) !important;
+    --body-mid:  rgb(2,119,189) !important;
+    --body-light: rgb(33,150,243) !important;   
+    transition: 1s;
+}
+
+.div_yoshi_red {
+    --body-dark: rgb(155,65,65) !important;
+    --body-mid:  rgb(231,90,90) !important;
+    --body-light: rgb(255,130,115) !important;   
+    transition: 1s;
+}
+
+.div_yoshi_white {
+    --body-dark: rgb(148,148,148) !important;
+    --body-mid:  rgb(201,201,201) !important;
+    --body-light: rgb(255,255,255) !important;   
+    transition: 1s;
+}
